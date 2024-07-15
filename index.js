@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 // Use game-related routes under the '/game' path
-app.use('/game', gameRoutes);
+app.use('/api/game', gameRoutes);
 
 // General error handling middleware
 app.use((err, req, res, next) => {
