@@ -12,6 +12,22 @@ const RoundSchema = new mongoose.Schema({
     player2Hits: {
         type: Array,
         default: []
+    },
+    player1Score: {
+        type: Number,
+        default: 0
+    },
+    player2Score: {
+        type: Number,
+        default: 0
+    },
+    round: {
+        type: Number,
+        default: 0
+    },
+    winner: {
+        type: String,
+        default: ""
     }
 }, { _id: false });
 
